@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(https://mahdisohaily.github.io/Leaderboard/images/bg-stars.svg), hsl(235deg 20.15% 21.09%);
+    ;
+    background-repeat: no-repeat;
+    background-size: contain,cover;
+    background-position: bottom;
+    color: white;
+}
+.main{
+    margin: 5rem;
+}
+.imgSection{
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgs{
+    margin: 15px 10px;
+    height: 500px;
+    width: 400px;
+    box-shadow: 1px 1px 2px 2px #ccc;
+    transition: transform 0.3s ease;
+}
+.imgs:hover{
+    transform: scale(1.05)
+}
+@media (max-width:480px){
+    .imgSection{
+        font-size: 20px;
+    }
+    .imgs{
+        height: 400px;
+        width: 300px;
+    }
+     
+}
